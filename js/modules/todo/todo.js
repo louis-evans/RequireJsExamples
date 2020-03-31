@@ -17,8 +17,9 @@ requirejs(['../utils/logger', 'repo/todoRepo', '../utils/dialog'], function(logg
             return;
         }
 
-        repo.add(newTask)
-            .then(id => {
+        repo.addNewTask(newTask)
+            .then(id => 
+            {
                 logger.debug('Added new task: ' + id);
                 dialog.success('Task Added!');
                 input.value = '';

@@ -46,8 +46,6 @@ define(['../../utils/logger'], function(logger) {
         return newId;
     }
 
-    return {
-        add: addNewTask
-    }
+    return { addNewTask };
 
 });
