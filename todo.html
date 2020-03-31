@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Todo List</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/lib/toastr.min.css">
+    </head>
+    <body>
+        <div class='container'>
+            <h1>
+                Todo List
+            </h1>
+
+            <div class='row'>
+                <div class='col-xs-12 col-sm-7 col-sm-offset-2'>
+                    <input id='EnterTask' class='form-control' type='text' placeholder="Enter a new task..."/>
+                </div>
+                <div class='col-xs-1'>
+                    
+                <br class='visible-xs'/>
+                    <button id='BtnAdd' class='btn btn-primary'>Add</button>
+                </div>
+            </div>
+            
+            <hr/>
+
+            <div class='row'>
+                <div class='col-xs-12 col-sm-11 col-sm-offset-1'>
+                    <h3>Tasks</h3>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-xs-12 col-sm-7 col-sm-offset-2'>
+                    <ul id='TodoList' class="list-group">
+                        <!-- Items Go Here... -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/lib/toastr.min.js"></script>
+        <script src="js/lib/moment.min.js"></script>
+        <script data-main='js/modules/todo/todo' src="js/lib/require.js"></script>  
+    </body>
+</html>
