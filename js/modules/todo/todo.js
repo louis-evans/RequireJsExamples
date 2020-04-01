@@ -23,6 +23,11 @@ requirejs(['../utils/logger', 'repo/todoRepo', '../utils/dialog'], function(logg
                 logger.debug('Added new task: ' + id);
                 dialog.success('Task Added!');
                 input.value = '';
+            })
+            .catch(e => 
+            {
+                logger.error('Error creating task!', e);
+                dialog.error('Could not create task!');
             });
     });
 });
