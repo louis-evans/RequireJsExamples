@@ -1,0 +1,22 @@
+{
+  "name": "RequireJsExamples",
+  "version": "1.0.0",
+  "description": "Simple examples of RequireJS",
+  "scripts": {
+    "serve": "npx http-server ./public -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louis-evans/RequireJsExamples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louis-evans/RequireJsExamples/issues"
+  },
+  "homepage": "https://github.com/louis-evans/RequireJsExamples#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
+}
