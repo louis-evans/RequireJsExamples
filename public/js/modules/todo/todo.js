@@ -6,8 +6,8 @@ requirejs(['../utils/logger', 'repo/todoRepo', '../utils/dialog'], function(logg
 {
     logger.debug('Loaded todo module');
 
-    document.getElementById('BtnAdd').addEventListener('click', function(e) {
-
+    document.getElementById('BtnAdd').addEventListener('click', function(e) 
+    {
         const input = document.getElementById('EnterTask');
         const newTask = input.value;
 

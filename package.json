@@ -9,8 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/louis-evans/RequireJsExamples.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Louis Evans",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/louis-evans/RequireJsExamples/issues"
