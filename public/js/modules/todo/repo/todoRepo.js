@@ -54,7 +54,7 @@ define(['../../utils/logger'], function(logger) {
         do
         {
             newId =  Math.floor(Math.random() * 9999999999) + 1;
-            const potentialElem = todoList.querySelector("li[data-id='" + newId + "']");
+            const potentialElem = todoList.querySelector(`li[data-id='${newId}']`);
 
             if(potentialElem === null) break;
         }

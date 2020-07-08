@@ -26,7 +26,7 @@ requirejs(['../utils/logger', 'repo/todoRepo', '../utils/dialog'], function(logg
             {
                 addTaskListItem(newTask, newId);
 
-                logger.debug('Added new task: ' + newId);
+                logger.debug(`Added new task: ${newId}`);
                 dialog.success('Task Added!');
                 input.value = '';                
             })
@@ -86,7 +86,7 @@ requirejs(['../utils/logger', 'repo/todoRepo', '../utils/dialog'], function(logg
         newItem.innerHTML = task;
 
         const subText = document.createElement('span');
-        subText.innerHTML = '<br/>Added: ' + moment().format('DD/MM/YYYY hh:mm:ss a');
+        subText.innerHTML = `<br/>Added: ${moment().format('DD/MM/YYYY hh:mm:ss a')}`;
         subText.classList.add('text-muted');
 
         const btnContainer = document.createElement('div');
@@ -125,7 +125,7 @@ requirejs(['../utils/logger', 'repo/todoRepo', '../utils/dialog'], function(logg
         return deleteBtn;
     };
 
-    const findTaskById = (taskId) => todoList.querySelector("li[data-id='" + taskId + "']");
+    const findTaskById = (taskId) => todoList.querySelector(`li[data-id='${taskId}']`);
 
     btnAdd.addEventListener('click', OnAddBtnClicked);
     input.addEventListener('keydown', (e) => e.keyCode === 13 ? OnAddBtnClicked() : () => {})
