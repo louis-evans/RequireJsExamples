@@ -16,7 +16,7 @@ define(['../../utils/logger'], function(logger) {
                 {
                     reject(e);
                 }
-            }, Math.floor(Math.random() * 2000));     
+            }, Math.floor(Math.random() * 2000)); //simulate a call to an API
         });
     };
 
@@ -34,7 +34,7 @@ define(['../../utils/logger'], function(logger) {
                 {
                     reject(e);
                 }
-            }, Math.floor(Math.random() * 1000));
+            }, Math.floor(Math.random() * 1000)); //simulate a call to an API
             
         });
     };
